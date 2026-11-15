@@ -34,7 +34,7 @@ jobs:
 
       - name: Build standalone executable
         run: |
-          pyinstaller --noconfirm --clean --windowed --onefile --name SimpleFortChest --collect-all PySide6 --collect-all pynput --hidden-import=pynput.keyboard._win32 app.py
+          pyinstaller --noconfirm --clean --windowed --onefile --name SimpleFortChest --collect-all pynput --hidden-import=pynput.keyboard._win32 app.py
 
       - name: Package release
         shell: pwsh
